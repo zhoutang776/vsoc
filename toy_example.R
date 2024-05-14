@@ -1,12 +1,4 @@
 rm(list = ls())
-if(Sys.info()[['sysname']] == "Darwin") {
-    setwd("/Users/zhoutang/Onedrive/Research/VIM/code/vsoc")
-}else {
-    setwd("/home/zhoutang/vsoc")
-}
-
-library(foreach)
-library(doParallel)
 library(SuperLearner)
 
 registerDoParallel(cores=parallel::detectCores())
