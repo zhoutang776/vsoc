@@ -5,7 +5,7 @@ library(SuperLearner)
 source("vsoc.R")
 set.seed(1234, kind = "L'Ecuyer-CMRG")
 # =========================== Parameter Definition =============================
-data <- read.csv("real data/winequality-white.csv", sep=";")
+data <- read.csv("real_data_analysis/data/winequality-white.csv", sep=";")
 
 n <- nrow(data)
 p <- ncol(data) - 1
